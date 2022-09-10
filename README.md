@@ -17,3 +17,14 @@ Its value is mapped to the bucket with the corresponding index. The key is uniqu
 * Result of the modulus is our hash known as index on which we store our value corresponding to that key 
 
 
+# Conflict in HashMap
+
+## Chaining
+
+ 　 basic idea of this method is to form a single linked list of all addresses hash synonym chain is called the element i, 
+   a single list head pointer and the i-th unit is present in the hash table, thereby find, insert and delete mainly in 
+   the synonym chain. Chain address law applicable to the case of frequent insertions and deletions.
+
+## Linear Probing
+   In case of same index, we try to find the next empty space for implementing the value, but if are at the last index, 
+   than we move towards the start of the array  of list to put our value
